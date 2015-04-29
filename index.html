@@ -160,7 +160,7 @@
                 var latestCompleteSpot = []
                 var startWithLatestRow = data.reverse()
                 startWithLatestRow.forEach(function(row){
-                    if (!row.lat || !row.long || !row.name || !row.address || !row.city || !row.state ) return
+                    if (!row.lat || !row.long || !row.name || !row.country || !row.major || !row.email ) return
                     else latestCompleteSpot.push(row)
                 })
                 return latestCompleteSpot[0]
